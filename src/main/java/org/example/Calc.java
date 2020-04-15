@@ -2,20 +2,38 @@ package org.example;
 
 public class Calc {
 
-    public static void addition(int input) {
-        System.out.println("Addition------------------");
-        System.out.println("Submit first number:"+input);
-           //    int firstNumber = Integer.parseInt(Input.userInput());
-          //     int integer =Integer.parseInt(firstNumber);
+    public static void calculation(int input) {
 
-/*
-        System.out.println(firstNumber+" + :");
-                int secondNumber = Integer.parseInt(Input.userInput());
-                int result = firstNumber + secondNumber;
-        System.out.println("Result: " + firstNumber + " + " + secondNumber + " = " + result);
-        //Thread.sleep(1000);*/
+        int first;
+        int second;
+        int result;
 
-
-
+            System.out.print("Number 1: ");
+                first = Input.checkIntNumber();
+            System.out.print("Number 2: ");
+                second = Input.checkIntNumber();
+            switch (input) {
+                case 1:
+                    result = first + second;
+                    System.out.println("Result : " + first + " + " + second + " = " + result);
+                    break;
+                case 2:
+                    result = first - second;
+                    System.out.println("Result : " + first + " - " + second + " = " + result);
+                    break;
+                case 3:
+                    result = first / second;
+                    System.out.println("Result : " + first + " / " + second + " = " + result);
+                    break;
+                case 4:
+                    result = first * second;
+                    System.out.println("Result : " + first + " * " + second + " = " + result);
+                    break;
+            }
     }
 }
+
+
+
+
+
