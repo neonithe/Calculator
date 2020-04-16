@@ -10,16 +10,15 @@ public class Input {
         return numInput;
 
     }
-    public static int checkIntNumber() {
+    public static int checkIntNumber(String input) {
         int num = 0;
-        boolean until =true;
-    while(until){
+        boolean runUntil =true;
+    while(runUntil){
         try {
-            String input = userInput();
-             num = Integer.valueOf(input); until = false;
+             num = Integer.valueOf(input); runUntil = false;
         } catch (NumberFormatException e) {
             System.out.println(e);
-            System.out.print("Enter number: ");
+            break;
         }
         }
         return num;
