@@ -10,6 +10,7 @@ public class Input {
         return numInput;
 
     }
+
     public static int checkIntNumber(String input) {
         int num = 0;
         boolean runUntil =true;

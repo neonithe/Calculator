@@ -2,7 +2,7 @@ package org.example;
 /* Simple calculator */
 public class Calculator {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  {
 
         String input;
         String first ="";
@@ -22,7 +22,6 @@ public class Calculator {
 
                if (Input.checkIntNumber(input) == 0) {
                     System.out.println("Unknown selection, try again");
-                   Thread.sleep(800);
 
                } else if (Integer.parseInt(input) <= 4 ) {
                    System.out.print("Number 1: ");
@@ -42,22 +41,18 @@ public class Calculator {
                    case "1" :
                        result = Calc.addition(Integer.parseInt(first), Integer.parseInt(second));
                        System.out.println("Result "+first+" + "+second+" = "+result);
-                       Thread.sleep(800);
                    break;
                    case "2" :
                        result = Calc.subtraction(Integer.parseInt(first), Integer.parseInt(second));
                        System.out.println("Result "+first+" - "+second+" = "+result);
-                       Thread.sleep(800);
                    break;
                    case "3" :
                        result = Calc.division(Integer.parseInt(first), Integer.parseInt(second));
                        System.out.println("Result "+first+" / "+second+" = "+result);
-                       Thread.sleep(800);
                    break;
                    case "4" :
                        result = Calc.multiplication(Integer.parseInt(first), Integer.parseInt(second));
                        System.out.println("Result "+first+" * "+second+" = "+result);
-                       Thread.sleep(800);
                    break;
                    default:
                        System.out.println("Unknown selection, try again");
